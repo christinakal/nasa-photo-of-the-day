@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import PictureCard from "./components/PictureCard";
+import Picture from "./components/Picture";
 
 function App() {
   return (
@@ -8,7 +8,7 @@ function App() {
       <div>
         <h1>NASA</h1>
         <h3>Image of the Day</h3>
-        <PictureCard/>
+        <Picture />
       </div>
     </div> 
   );

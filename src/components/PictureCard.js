@@ -1,10 +1,9 @@
 import React from "react";
-import Picture from "./Picture";
 
-function PictureCard() {
+const PictureCard = props => {
     return <div>
                 This is PictureCard.js
-                <Picture />
+                <h2>{props.title}</h2>
             </div>
     
 }
