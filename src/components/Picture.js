@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
 import PictureCard from "./PictureCard";
 
@@ -12,22 +12,19 @@ function Picture(){
             .get(`https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY`)
             .then(res => {
                 console.log(res.data)
-                // setNasaData(res.data);
+                setNasaData(res.data);
             })
             .catch(err => console.log(err))
         }, []);
 
     return (
         <div className="picture">
-            {nasaData.map((data,index) => (
                 <PictureCard 
-                    key={index}
-                    date={data.date}
-                    explanation={data.explanation}
-                    title={data.title}
-                    url={data.url}
+                    date={nasaData.date}
+                    explanation={nasaData.explanation}
+                    title={nasaData.title}
+                    url={nasaData.url}
                 />
-            ))} 
         </div>
     );
     
