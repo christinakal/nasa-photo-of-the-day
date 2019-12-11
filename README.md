@@ -39,7 +39,7 @@ Follow these steps for completing your project.
 - [ ] Do your magic!
 
 # _Project - NASA APOD - Part I_
-
+ 
 - This is a really fun project, and one to show your family and friends when you've finished.
 - You will be starting from scratch and building the entire app
 - You don't have any design specs to follow for this project, so you may want to start by building a basic wireframe first. Make it simple at the beginning, since you don't know what data you'll be getting back from NASA
