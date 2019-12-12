@@ -15,7 +15,7 @@ function Picture(){
                 setNasaData(res.data);
             })
             .catch(err => console.log(err))
-        }, []);
+        }, []); 
 
     return (
         <div className="picture">

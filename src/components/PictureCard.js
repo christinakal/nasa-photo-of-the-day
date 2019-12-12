@@ -4,7 +4,7 @@ const PictureCard = props => {
     console.log("Props:", props)
     return <div key={props.index}>
                 <h3>{props.title}</h3>
-                <img src={props.url}/>
+                <img als={props.title} src={props.url}/>
                 <div>Photo taken at: {props.date}</div>
                 <h3>Description</h3>
                 <p>{props.explanation}</p>
@@ -12,4 +12,4 @@ const PictureCard = props => {
     
 }
 
-export default PictureCard;
+export default PictureCard; 
