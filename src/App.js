@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="App">
       <div>  
-          <Navbar color="faded" light>
+          <Navbar color="faded" light style={{fontFamily:'Montserrat', backgroundColor:'#8bbabb'}}>
             <NavbarBrand href="/" className="mr-auto">NASA</NavbarBrand>
             <NavbarToggler onClick={toggleNavbar} className="mr-2" />
             <Collapse isOpen={!collapsed} navbar>

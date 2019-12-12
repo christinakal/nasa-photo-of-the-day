@@ -11,12 +11,20 @@ const [modal, setModal] = useState(false);
 const toggle = () => setModal(!modal);
 
     return <div key={props.index}>
-                <Card style={{maxWidth:'1000px', margin:'0 auto'}}>
+                <Card style={{maxWidth:'1000px', margin:'0 auto', fontFamily:'Montserrat', color:'#464159'}}>
                     <CardImg top width="100%" src={props.url} alt="Card image cap" />
                     <CardBody>
                         <CardSubtitle>{props.title}</CardSubtitle>
                         <CardText></CardText>
-                        <Button>Description</Button>
+                        <Button onClick={toggle} style={{backgroundColor:'#6c7b95'}}>Description</Button>
+                        <Modal isOpen={modal} toggle={toggle} style={{fontFamily:'Montserrat'}}>
+                            <ModalHeader toggle={toggle}>Description</ModalHeader>
+                            <ModalBody>
+                            {props.explanation}
+                            </ModalBody>
+                            <ModalFooter>
+                            </ModalFooter>
+                        </Modal>
                     </CardBody>
                 </Card>
             </div>
